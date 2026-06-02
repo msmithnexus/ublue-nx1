@@ -1,7 +1,7 @@
 [customizations.installer.kickstart]
 contents = """
 %post
-bootc switch --mutate-in-place --transport registry ghcr.io/msmithnexus/ublue-nx1:latest
+bootc switch --mutate-in-place --transport registry ghcr.io/morrolinux/morros:latest
 %end
 """
 
@@ -15,7 +15,6 @@ enable = [
   "org.fedoraproject.Anaconda.Modules.Users",
   "org.fedoraproject.Anaconda.Modules.Timezone"
 ]
-
 disable = [
-  "org.fedoraproject.Anaconda.Modules.Subscription",
+  "org.fedoraproject.Anaconda.Modules.Subscription"
 ]
