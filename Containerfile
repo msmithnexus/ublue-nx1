@@ -4,7 +4,7 @@ COPY build_files /
 
 # Base Image
 #FROM registry.gitlab.com/origami-linux/images/origami-nvidia:latest
-FROM ghcr.io/ublue-os/bazzite:stable
+FROM ghcr.io/ublue-os/bluefin:latest
 RUN sed -i 's/^ID=.*/ID=fedora/' /etc/os-release
 
 ## Other possible base images include:
