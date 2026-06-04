@@ -12,7 +12,7 @@ fi
 
 IMAGE_REF="ostree-image-signed:docker://ghcr.io/irunatbullets/${FULL_NAME}"
 
-dnf5 install -y tmux mc vim rclone keepassxc thunderbird terminator speedtest-cli htop net-tools vlc timeshift gh git btrfs-assistant obsidian brave
+dnf5 install -y tmux mc rclone keepassxc thunderbird terminator speedtest-cli htop vlc timeshift gh git
 
 dnf5 -y copr enable avengemedia/dms
 dnf5 -y copr enable avengemedia/danklinux
